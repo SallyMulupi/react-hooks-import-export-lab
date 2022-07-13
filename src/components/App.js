@@ -1,13 +1,8 @@
 import React from "react";
 
-function App() {
-  return (
-    <div>
-      <NavBar />
-      <Home />
-      <About />
-    </div>
+function NavBar() {
+  return ( <nav >
+      <a href = "#home" > I 'm a link!</a>
+       </nav>
   );
 }
-
-export default App;
