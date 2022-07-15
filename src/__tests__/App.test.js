@@ -9,3 +9,9 @@ test("it renders without crashing", () => {
     throw new Error("Make sure to import the required components!");
   }
 });
+test("renders the correct child components", () => {
+  const { container } = render( < App / > );
+expect(container.querySelector("nav")).toBeInTheDocument();
+    expect(container.querySelector("#home")).toBeInTheDocument();
+    expect(container.querySelector("#about")).toBeInTheDocument();
+});
